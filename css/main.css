@@ -1,35 +1,12 @@
 @charset "UTF-8";
-/* 나눔 고딕
-   regular - 400
-   bold - 700
-   extrabold - 800
-
-   font-family: 'Nanum Gothic', sans-serif;
-*/
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
-/*
-    exlight - 200
-    light - 300
-    regular - 400
-    medium - 500
-    semibold - 600
-
-    font-family: 'Oswald', sans-serif;
-
-*/
-
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap');
+/* welcome */
+.welcome{background:#cbd3e2;}
+.welcome > div{padding:0 30px; box-sizing: border-box;}
+.welcome .b-border{width:100%; border-bottom:1px solid #3a3c44; box-sizing: border-box;}
+.welcome h1{color:#3a3c44;}
 
 
 
-
-
-/* */
-
-
-
-
-
-
-
+/* develop */
+.develop{background: rgb(58, 60, 68);}
 
