@@ -12,20 +12,47 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js" integrity="sha512-0xW5KFMtT462F65vVvIejNawM1U2Fp/yhItmQVFUwdYP+R9tQFCn4QtLEhkp6RoGovZ6YCvbxy+GVCtGv0+nvA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/8.6.0/index.es.min.js" integrity="sha512-uDWckFJwOvSeV4AvH0HvCZUXa5QVUTzvJpndMNrzRRwFaLLNlqVvjk+Lk1SElN5wY8u+TLsTatzeofKys9Bs9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/typeit@8.6.3/dist/index.umd.js"></script>
+
   <title>이채원</title>
 
   <script>
     $(function(){
+
       $('#fullpage').fullpage({
           //options here
-
-
           autoScrolling:true,
           scrollHorizontally: true
         });
 
-
+        new TypeIt("#title", {
+            speed: 50,
+            startDelay: 900,
+          })
+            .type("the mot versti", { delay: 100 })
+            .move(-8, { delay: 100 })
+            .type("s", { delay: 400 })
+            .move(null, { to: "START", instant: true, delay: 300 })
+            .move(1, { delay: 200 })
+            .delete(1)
+            .type("T", { delay: 225 })
+            .pause(200)
+            .move(2, { instant: true })
+            .pause(200)
+            .move(5, { instant: true })
+            .move(5, { delay: 200 })
+            .type("a", { delay: 350 })
+            .move(null, { to: "END" })
+            .type("le typing utlity")
+            .move(-4, { delay: 150 })
+            .type("i")
+            .move(null, { to: "END" })
+            .type(' on the <span class="place">internet</span>', { delay: 400 })
+            .delete(".place", { delay: 800, instant: true })
+            .type('<em><strong class="font-semibold">planet.</strong></em>', {
+              speed: 100,
+            })
+            .go();
     });
   </script>
 
@@ -37,7 +64,7 @@
         <section class="welcome section">
           <div>
             <div class="b-border">
-              <h1>이채원입니다.</h1>
+              <h1 id="title"></h1>
             </div>
           </div>
         </section>
