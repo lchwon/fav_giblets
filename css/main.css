@@ -1,12 +1,36 @@
 @charset "UTF-8";
+
+/* 공통 */
+
+
 /* welcome */
 .welcome{background:#cbd3e2; box-sizing: border-box;}
 .welcome > div{padding:0 30px; box-sizing: border-box; }
 .welcome .b-border{width:100%; border-bottom:1px solid #3a3c44; box-sizing: border-box;}
 .welcome h1{color:#3a3c44;}
 
-
-
 /* develop */
-.develop{background: rgb(58, 60, 68);}
+section.develop h2{color:#22419c; padding:20px 0 0 20px;}
+.develop{background:#fffef9}
+.slide-area{text-align: center; }
+.slide-area strong{color:#5566aa; transition: 0.5s;}
+.slide-area a{color:#222;}
+.slide-area a:hover{text-decoration: underline;}
+
+.fp-controlArrow.fp-next{width:54px !important; height:98px;background:url('/images/btn/btn_main_visual_next.png')no-repeat center; background-size:54px 98px; top:57%; border-width: 0 !important;}
+.fp-controlArrow.fp-prev{width:54px !important; height:98px;background:url('/images/btn/btn_main_visual_prev.png')no-repeat center; background-size:54px 98px; top:57%; border-width: 0 !important;}
+
+/* maintenance */
+.maintenance{position: relative;}
+h2.maintenance-title{color:#222; position: absolute; top:20px; left:20px;}
+
+.swiper-slide.box-list{ max-width:100%; padding:40px 20px 70px; background:#fff; border-radius: 16px; box-shadow: 0 0 1.5rem 1.5rem rgb(0 0 0 / 4%); box-sizing: border-box;} 
+.box-list .num{font-size:14px; color:#d21635;}
+
+.box-list .name-title{font-size:24px; position: relative; padding:10px 0; box-sizing: border-box;}
+.box-list .name-title span{background:#2e2e2e; width:10%; height:1px;position: absolute; bottom:0; left:0;}
+
+
+
+
 

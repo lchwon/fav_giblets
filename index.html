@@ -18,41 +18,27 @@
 
   <script>
     $(function(){
-
+      //fullpage
       $('#fullpage').fullpage({
           //options here
           autoScrolling:true,
           scrollHorizontally: true
         });
-
+      //typeit
         new TypeIt("#title", {
             speed: 50,
             startDelay: 900,
           })
-            .type("the mot versti", { delay: 100 })
-            .move(-8, { delay: 100 })
-            .type("s", { delay: 400 })
-            .move(null, { to: "START", instant: true, delay: 300 })
-            .move(1, { delay: 200 })
-            .delete(1)
-            .type("T", { delay: 225 })
-            .pause(200)
-            .move(2, { instant: true })
-            .pause(200)
-            .move(5, { instant: true })
-            .move(5, { delay: 200 })
-            .type("a", { delay: 350 })
-            .move(null, { to: "END" })
-            .type("le typing utlity")
-            .move(-4, { delay: 150 })
-            .type("i")
-            .move(null, { to: "END" })
-            .type(' on the <span class="place">internet</span>', { delay: 400 })
-            .delete(".place", { delay: 800, instant: true })
-            .type('<em><strong class="font-semibold">planet.</strong></em>', {
-              speed: 100,
-            })
-            .go();
+          .type('이채원의 포트폴리오',{delay:200})
+          .go();
+
+      //swiper
+      const swiper = new Swiper('.swiper-container',{
+        slidesPerView: 3,
+        spaceBetween: 20,
+        slidesPerGroup: 3,
+        loopFillGroupWithBlank : true,
+      });
     });
   </script>
 
@@ -72,7 +58,7 @@
           <h2>구축 및 리뉴얼</h2>
           <div>
             <div class="slide">
-              <div>
+              <div class="slide-area">
                 <strong>현대모비스 방문 예약 시스템 (사내 홈페이지)</strong>
                 <p>2022.06 - 2022.06</p>
                 <p>현대모비스 방문 예약 시스템 홈페이지 리뉴얼</p>
@@ -80,7 +66,7 @@
               </div>
             </div>
             <div class="slide">
-              <div>
+              <div class="slide-area">
                 <strong>국민대학교 일반대학원 홈페이지</strong>
                 <p>2022.05 - 2022.06</p>
                 <p>국민대학교 일반대학원 홈페이지 리뉴얼</p>
@@ -88,7 +74,7 @@
               </div>
             </div>
             <div class="slide">
-              <div>
+              <div class="slide-area">
                 <strong>현대모비스 공감 홈페이지(사내 홈페이지)</strong>
                 <p>2022.03 - 2022.03</p>
                 <p>현대모비스 공감 홈페이지 구축</p>
@@ -96,54 +82,164 @@
               </div>
             </div>
             <div class="slide">
-              <div>
+              <div class="slide-area">
                 <strong>용산역사박물관 홈페이지</strong>
                 <p>2021.10 - 2022.03</p>
                 <p>용산역사박물관 홈페이지 구축</p>
-                <a hrf="https://museum.yongsan.go.kr/" target="_blank">https://museum.yongsan.go.kr/</a>
+                <a href="https://museum.yongsan.go.kr/" target="_blank">https://museum.yongsan.go.kr/</a>
               </div>
             </div>
             <div class="slide">
-              <div>
+              <div class="slide-area">
                 <strong>경기예술인지원센터 홈페이지</strong>
                 <p>2021.06 - 2021.07</p>
                 <p>경기예술인지원센터 홈페이지 리뉴얼</p>
-                <a hrf="https://artist.ggcf.kr/artist/main/" target="_blank">https://artist.ggcf.kr/</a>
+                <a href="https://artist.ggcf.kr/artist/main/" target="_blank">https://artist.ggcf.kr/</a>
               </div>
             </div>
             <div class="slide">
-              <div>
+              <div class="slide-area">
                 <strong>국립중앙박물관 홈페이지</strong>
                 <p>2020.12 - 2021.09</p>
                 <p>국립중앙박물관(국,영.중) 홈페이지 리뉴얼</p>
-                <a hrf="https://www.museum.go.kr/site/main/home" target="_blank">https://www.museum.go.kr/</a>
+                <a href="https://www.museum.go.kr/site/main/home" target="_blank">https://www.museum.go.kr/</a>
               </div>
             </div>
             <div class="slide">
-              <div>
+              <div class="slide-area">
                 <strong>경기문화예술교육지원센터 홈페이지</strong>
                 <p>2020.10 - 2020.12</p>
                 <p>경기문화예술교육지원센터 홈페이지 리뉴얼</p>
-                <a hrf="https://ggarte.ggcf.kr/" target="_blank">https://ggarte.ggcf.kr/</a>
+                <a href="https://ggarte.ggcf.kr/" target="_blank">https://ggarte.ggcf.kr/</a>
               </div>
             </div>
           </div>
         </section>
         <section class="maintenance section">
-          <h2>유지보수</h2>
-          <div>
-            <ul>
-              <li>1. 용산역사박물관 유지보수</li>
-              <li>2. 국민대학교 대표 홈페이지 및 일반대학 유지보수</li>
-              <li>3. 사행산업통합감독위원회 홈페이지 유지보수</li>
-              <li>4. 국립중앙박물관 홈페이지 유지보수</li>
-              <li>5. 현대제뉴인 홈페이지 유지보수</li>
-              <li>6. 경기도어린이박물관 관리자(CMS) 홈페이지 유지보수</li>
-              <li>7. 현대코어모션 홈페이지 유지보수</li>
-              <li>8. 현대산업차량 홈페이지 유지보수</li>
-              <li>9. 삼양인터내셔날 홈페이지 유지보수</li>
-              <li>10. 위니아에이드 홈페이지 유지보수</li>
-              <li>11. 경기문화재단 홈페이지(워드프레스) 유지보수</li>
+          <h2 class="maintenance-title">유지보수</h2>
+          <div class="swiper-container">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide box-list ">
+                <div class="box">
+                  <p class="num">01</p>
+                  <div class="name-title">용산역사박물관
+                    <span></span>
+                  </div>
+                  <div class="contents">
+                    <p>유지보수</p>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide box-list">
+                <div class="box">
+                  <p class="num">02</p>
+                  <div class="name-title">국민대학교
+                    <span></span>
+                  </div>
+                  <div class="contents">
+                    <p>대표 홈페이지, 일반대학 홈페이지 유지보수</p>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide box-list">
+                <div class="box">
+                  <p class="num">03</p>
+                  <div class="name-title">사행산업통합감독위원회
+                    <span></span>
+                  </div>
+                  <div class="contents">
+                    <p>유지보수</p>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide box-list">
+                <div class="box">
+                  <p class="num">04</p>
+                  <div class="name-title">국립중앙박물관
+                    <span></span>
+                  </div>
+                  <div class="contents">
+                    <p>유지보수</p>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide box-list">
+                <div class="box">
+                  <p class="num">05</p>
+                  <div class="name-title">현대제뉴인
+                    <span></span>
+                  </div>
+                  <div class="contents">
+                    <p>유지보수</p>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide box-list">
+                <div class="box">
+                  <p class="num">06</p>
+                  <div class="name-title">경기도어린이박물관
+                    <span></span>
+                  </div>
+                  <div class="contents">
+                    <p>관리자(CMS) 유지보수</p>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide box-list">
+                <div class="box">
+                  <p class="num">07</p>
+                  <div class="name-title">현대코어모션
+                    <span></span>
+                  </div>
+                  <div class="contents">
+                    <p>유지보수</p>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide box-list">
+                <div class="box">
+                  <p class="num">08</p>
+                  <div class="name-title">현대산업차량
+                    <span></span>
+                  </div>
+                  <div class="contents">
+                    <p>유지보수</p>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide box-list">
+                <div class="box">
+                  <p class="num">09</p>
+                  <div class="name-title">삼양인터내셔날
+                    <span></span>
+                  </div>
+                  <div class="contents">
+                    <p>유지보수</p>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide box-list">
+                <div class="box">
+                  <p class="num">10</p>
+                  <div class="name-title">위니아에이드
+                    <span></span>
+                  </div>
+                  <div class="contents">
+                    <p>유지보수</p>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide box-list">
+                <div class="box">
+                  <p class="num">11</p>
+                  <div class="name-title">경기도문화재단
+                    <span></span>
+                  </div>
+                  <div class="contents">
+                   <p>유지보수(워드프레스)</p>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
         </section>
