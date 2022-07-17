@@ -34,11 +34,31 @@
 
       //swiper
       const swiper = new Swiper('.swiper-container',{
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 20,
-        slidesPerGroup: 3,
+        slidesPerGroup: 4,
         loopFillGroupWithBlank : true,
       });
+
+      //list-slide
+      $('.box-list').mouseover(function(){
+        $(this).find('.num').animate({
+          fontSize:40,
+        });
+        $(this).find('span').animate({
+          width:'100%',
+        }, '100');
+      }).mouseout(function(){
+        $(this).find('.num').animate({
+          fontSize:20,
+        });
+        $(this).find('span').animate({
+          width:'10%',
+        }, '100');
+      });
+
+
+
     });
   </script>
 
@@ -59,58 +79,83 @@
           <div>
             <div class="slide">
               <div class="slide-area">
-                <strong>현대모비스 방문 예약 시스템 (사내 홈페이지)</strong>
-                <p>2022.06 - 2022.06</p>
-                <p>현대모비스 방문 예약 시스템 홈페이지 리뉴얼</p>
-                <a href="#">-</a>
+                <div>
+                  <img src="/images/bg/img_gds.jpg" alt="일반대학원">
+                </div>
+                <div>
+                  <strong>국민대학교 일반대학원 홈페이지</strong>
+                  <p class="date">2022.05 - 2022.06</p>
+                  <p>국민대학교 일반대학원 홈페이지 리뉴얼</p>
+                  <a class="site site-box" href="https://gds.kookmin.ac.kr/" target="_blank">https://gds.kookmin.ac.kr/<i class="arrow"></i></a>
+                </div>
               </div>
             </div>
             <div class="slide">
               <div class="slide-area">
-                <strong>국민대학교 일반대학원 홈페이지</strong>
-                <p>2022.05 - 2022.06</p>
-                <p>국민대학교 일반대학원 홈페이지 리뉴얼</p>
-                <a href="https://gds.kookmin.ac.kr/" target="_blank">https://gds.kookmin.ac.kr/</a>
+                <strong>현대모비스 방문 예약 시스템 (사내 홈페이지)</strong>
+                <p class="date">2022.06 - 2022.07</p>
+                <p>현대모비스 방문 예약 시스템 홈페이지 리뉴얼</p>
+                <a class="site" href="#">-</a>
               </div>
             </div>
             <div class="slide">
               <div class="slide-area">
                 <strong>현대모비스 공감 홈페이지(사내 홈페이지)</strong>
-                <p>2022.03 - 2022.03</p>
+                <p class="date">2022.03 - 2022.03</p>
                 <p>현대모비스 공감 홈페이지 구축</p>
-                <a href="#">-</a>
+                <a class="site" href="#">-</a>
               </div>
             </div>
             <div class="slide">
               <div class="slide-area">
-                <strong>용산역사박물관 홈페이지</strong>
-                <p>2021.10 - 2022.03</p>
-                <p>용산역사박물관 홈페이지 구축</p>
-                <a href="https://museum.yongsan.go.kr/" target="_blank">https://museum.yongsan.go.kr/</a>
+                <div>
+                  <img src="/images/bg/img_yongsan.jpg" alt="용산역사박물관">
+                </div>
+                <div>
+                  <strong>용산역사박물관 홈페이지</strong>
+                  <p class="date">2021.10 - 2022.03</p>
+                  <p>용산역사박물관 홈페이지 구축</p>
+                  <a class="site site-box" href="https://museum.yongsan.go.kr/" target="_blank">https://museum.yongsan.go.kr/<i class="arrow"></i></a>
+                </div>
               </div>
             </div>
             <div class="slide">
               <div class="slide-area">
-                <strong>경기예술인지원센터 홈페이지</strong>
-                <p>2021.06 - 2021.07</p>
-                <p>경기예술인지원센터 홈페이지 리뉴얼</p>
-                <a href="https://artist.ggcf.kr/artist/main/" target="_blank">https://artist.ggcf.kr/</a>
+                <div>
+                  <img src="/images/bg/img_ggcfart.jpg" alt="경기예술인지원센터">
+                </div>
+                <div>
+                  <strong>경기예술인지원센터 홈페이지</strong>
+                  <p class="date">2021.06 - 2021.07</p>
+                  <p>경기예술인지원센터 홈페이지 리뉴얼</p>
+                  <a class="site site-box" href="https://artist.ggcf.kr/artist/main/" target="_blank">https://artist.ggcf.kr/<i class="arrow"></i></a>
+                </div>
               </div>
             </div>
             <div class="slide">
               <div class="slide-area">
-                <strong>국립중앙박물관 홈페이지</strong>
-                <p>2020.12 - 2021.09</p>
-                <p>국립중앙박물관(국,영.중) 홈페이지 리뉴얼</p>
-                <a href="https://www.museum.go.kr/site/main/home" target="_blank">https://www.museum.go.kr/</a>
+                <div>
+                  <img src="/images/bg/img_museum.jpg" alt="국립중앙박물관">
+                </div>
+                <div>
+                  <strong>국립중앙박물관 홈페이지</strong>
+                  <p class="date">2020.12 - 2021.09</p>
+                  <p>국립중앙박물관(국,영.중) 홈페이지 리뉴얼</p>
+                  <a class="site site-box" href="https://www.museum.go.kr/site/main/home" target="_blank">https://www.museum.go.kr/<i class="arrow"></i></a>
+                </div>
               </div>
             </div>
             <div class="slide">
               <div class="slide-area">
-                <strong>경기문화예술교육지원센터 홈페이지</strong>
-                <p>2020.10 - 2020.12</p>
-                <p>경기문화예술교육지원센터 홈페이지 리뉴얼</p>
-                <a href="https://ggarte.ggcf.kr/" target="_blank">https://ggarte.ggcf.kr/</a>
+                <div>
+                  <img src="/images/bg/img_ggcf.jpg" alt="경기문화예술교육지원센터">
+                </div>
+                <div>
+                  <strong>경기문화예술교육지원센터 홈페이지</strong>
+                  <p class="date">2020.10 - 2020.12</p>
+                  <p>경기문화예술교육지원센터 홈페이지 리뉴얼</p>
+                  <a class="site site-box" href="https://ggarte.ggcf.kr/" target="_blank">https://ggarte.ggcf.kr/<i class="arrow"></i></a>
+                </div>
               </div>
             </div>
           </div>
