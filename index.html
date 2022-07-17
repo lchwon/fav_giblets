@@ -41,14 +41,14 @@
       });
 
       //list-slide
-      $('.box-list').mouseover(function(){
+      $('.box-list').mouseenter(function(){
         $(this).find('.num').animate({
           fontSize:40,
         });
         $(this).find('span').animate({
           width:'100%',
         }, '100');
-      }).mouseout(function(){
+      }).mouseleave(function(){
         $(this).find('.num').animate({
           fontSize:20,
         });
